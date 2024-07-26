@@ -1,0 +1,24 @@
+<div class=" d-flex flex-column justify-content-between h-100" [class]="icon ? 'icond-card ': 'imaged-card'">
+  <ng-container *ngIf="icon">
+    <div class="icon-img">
+      <img [src]="'../../../../assets/images/'+icon" class="img-fluid rounded-top" alt="" />
+    </div>
+  </ng-container>
+  <ng-container *ngIf="image">
+    <div class="icon-img">
+      <img [src]="'../../../../assets/images/'+image" class="img-fluid rounded-top" alt="" />
+    </div>
+  </ng-container>
+
+  <p [style]="icon ? 'font-size: 24px; line-height: 29px;':'font-size: 20px; line-height: 24px;'">
+    {{discription}}
+  </p>
+  <ng-container *ngIf="icon">
+    <button class="btn btn-outline-light  rounded-circle fs-5 align-self-end" style="width: 56px; height: 56px;
+    transform: rotate(45deg);">
+      <i class=" fa-solid fa-arrow-right"></i>
+    </button>
+  </ng-container>
+
+
+</div>

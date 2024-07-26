@@ -1,0 +1,13 @@
+.chip {
+  background-color: #ffffff0d;
+  width: max-content;
+  padding: 24px 32px;
+}
+@media screen and (max-width: 1400px) {
+  .fs-24 {
+    font-size: 16px !important;
+  }
+  .chip {
+    padding: 10px 14px;
+  }
+}

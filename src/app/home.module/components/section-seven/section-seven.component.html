@@ -1,0 +1,38 @@
+<section class="bg-secondary sec-7 sec-padding ">
+  <div class="container">
+
+    <div class="row justify-content-center">
+      <div class="col-12 mb-5">
+        <div>
+          <p class="text-center text-white" style="font-size: 40px; line-height: 48px; font-weight: 600;">
+            What <span class="text-main">
+              our client
+            </span> says
+          </p>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="position-relative">
+          <owl-carousel-o [options]="testimonialsOptions" #testimonials>
+            <ng-template carouselSlide>
+              <app-testemonial image="sec-7-1.jpeg" name="Ahmed" role="owner"
+                description="Lorem ipsum dolor sit amet consectetur. Tincidunt pharetra duis enim donec etiam tellus. Ac malesuada bibendum faucibus sollicitudin in amet at. Mauris donec pellentesque sit velit massa sem eget ligula. Morbi elit quis placerat pharetra in."></app-testemonial>
+            </ng-template>
+            <ng-template carouselSlide>
+              <app-testemonial image="sec-7-2.jpeg" name="Bakr" role="owner"
+                description="Lorem ipsum dolor sit amet consectetur. Tincidunt pharetra duis enim donec etiam tellus. Ac malesuada bibendum faucibus sollicitudin in amet at. Mauris donec pellentesque sit velit massa sem eget ligula. Morbi elit quis placerat pharetra in."></app-testemonial>
+            </ng-template>
+            <ng-template carouselSlide>
+              <app-testemonial image="sec-7-3.jpeg" name="Mohamed" role="owner"
+                description="Lorem ipsum dolor sit amet consectetur. Tincidunt pharetra duis enim donec etiam tellus. Ac malesuada bibendum faucibus sollicitudin in amet at. Mauris donec pellentesque sit velit massa sem eget ligula. Morbi elit quis placerat pharetra in."></app-testemonial>
+            </ng-template>
+            <ng-template carouselSlide>
+              <app-testemonial image="sec-7-1.jpeg" name="Ahmed" role="owner"
+                description="Lorem ipsum dolor sit amet consectetur. Tincidunt pharetra duis enim donec etiam tellus. Ac malesuada bibendum faucibus sollicitudin in amet at. Mauris donec pellentesque sit velit massa sem eget ligula. Morbi elit quis placerat pharetra in."></app-testemonial>
+            </ng-template>
+          </owl-carousel-o>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

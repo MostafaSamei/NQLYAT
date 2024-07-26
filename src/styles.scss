@@ -1,0 +1,288 @@
+/* You can add global styles to this file, and also import other style files */
+@use "sass:map";
+
+@import "./assets/sass/style.scss";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import "ngx-owl-carousel-o/lib/styles/scss/owl.carousel";
+@import "ngx-owl-carousel-o/lib/styles/scss/owl.theme.default";
+
+@media (min-width: 1400px) {
+  .container {
+    padding: 0;
+    max-width: 1520px !important;
+  }
+}
+
+.nav-link {
+  // margin-right: 5px;
+
+  // margin-inline: 8px;
+  &:hover {
+    @extend .nav-active;
+  }
+}
+
+body {
+  font-family: "Inter", sans-serif !important;
+}
+.arrow-shadow {
+  text-shadow: -30px -15px 0px rgba(255, 255, 255, 0.3);
+}
+
+//////////////////////////////////////////////////////
+/// FONT SIZE
+
+.fs-64 {
+  font-size: 64px;
+}
+.fs-40 {
+  font-size: 40px;
+}
+.fs-32 {
+  font-size: 32px;
+}
+.fs-24 {
+  font-size: 24px;
+}
+.fs-20 {
+  font-size: 20px;
+}
+.fs-16 {
+  font-size: 16px;
+}
+
+//////////////////////////////////////////////////////
+/// LINE HEIGHT
+.line-high-48 {
+  line-height: 48px;
+}
+.line-high-38 {
+  line-height: 38px;
+}
+.line-high-32 {
+  line-height: 32px;
+}
+.line-high-29 {
+  line-height: 29px;
+}
+.line-high-24 {
+  line-height: 24.2px;
+}
+.line-high-19 {
+  line-height: 19px;
+}
+
+//////////////////////////////////////////////////////
+/// FONT WEIGHT
+.fw-600 {
+  font-weight: 600;
+}
+.p-40 {
+  padding: 40px !important;
+}
+.p-16 {
+  padding: 16px !important;
+}
+.p-18 {
+  padding: 18px;
+}
+
+//////////////////////////////////////////////////////
+/// RADIUS
+.radius-10 {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.radius-50 {
+  border-radius: 50px !important;
+  overflow: hidden;
+}
+
+//////////////////////////////////////////////////////
+/// Z-INDEX
+.z-index-999 {
+  z-index: 999;
+}
+
+//////////////////////////////////////////////////////
+
+.nav-active {
+  padding: 16px 24px !important;
+  background-color: map.get($colors, "main");
+}
+
+.main-p {
+  padding: 16px 40px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24.2px;
+}
+
+.my-shadow {
+  -webkit-box-shadow: 11px 29px 47px -27px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 11px 29px 47px -27px rgba(0, 0, 0, 0.75);
+  box-shadow: 11px 29px 47px -27px rgba(0, 0, 0, 0.75);
+}
+
+.icond-card {
+  height: 100%;
+  padding: 40px;
+  background-color: #ffffff0d;
+  border-radius: 50px;
+}
+.imaged-card {
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 60px;
+  background-color: #ffffff0d;
+  border-radius: 50px;
+  backdrop-filter: blur(3px);
+}
+.icond-card:hover,
+.imaged-card:hover {
+  background-color: map.get($colors, "main");
+}
+.icon-img {
+  margin-bottom: 40px;
+}
+.icon-img {
+  margin-bottom: 60px;
+}
+.owl-carousel {
+  z-index: 9;
+}
+
+.owl-prev,
+.owl-next {
+  $width: 60px;
+  font-size: 22px !important;
+  position: absolute;
+  top: 0%;
+  right: 0;
+  border-radius: 50% !important;
+  width: $width;
+  height: $width;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: transparent;
+  @extend .btn;
+  @extend .btn-light;
+}
+
+.owl-prev {
+  background-color: transparent !important;
+  transform: translateX(-100px);
+}
+.owl-next {
+  background-color: map.get($colors, "main") !important;
+}
+.slide-padding {
+  padding-top: 90px;
+}
+
+.sec-7 .owl-nav {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.sec-7 .owl-next,
+.sec-7 .owl-prev {
+  position: relative;
+
+  transform: translateX(-0%);
+}
+.sec-padding {
+  padding-block: 128px;
+}
+
+.sec-2,
+.sec-7 {
+  position: relative;
+  z-index: 18;
+}
+.sec-2:after,
+.sec-7::after {
+  content: "";
+  z-index: 1;
+  background-color: #f05326;
+  position: absolute;
+  top: -10%;
+  left: 0%;
+  transform: translateX(-60%);
+  height: 1232px;
+  width: 1232px;
+  border-radius: 50%;
+}
+.sec-2::before,
+.sec-7::before {
+  content: "";
+  z-index: 1;
+  background-color: #f05326;
+  position: absolute;
+  top: -10%;
+  right: 0%;
+  transform: translateX(60%);
+  height: 1232px;
+  width: 1232px;
+  border-radius: 50%;
+}
+
+.sec-2 .blured-shadow,
+.sec-4::after,
+.sec-4::before {
+  content: "";
+  $dimentions: 352px;
+  height: $dimentions;
+  width: $dimentions;
+  position: absolute;
+  background-color: rgb(240, 83, 38);
+  border-radius: 50%;
+  filter: blur(150px);
+  opacity: 0.5;
+  z-index: 1;
+  -webkit-box-shadow: 0px 0px 50px 50px rgb(240, 81, 38);
+  -moz-box-shadow: 0px 0px 50px 50px rgb(240, 81, 38);
+  box-shadow: 0px 0px 50px 50px rgb(240, 81, 38);
+}
+@media screen and (max-width: 1200px) {
+  .sec-2:after,
+  .sec-2::before,
+  .sec-7::after,
+  .sec-7::before {
+    display: none;
+  }
+}
+
+.sec-2 .blured-shadow {
+  left: 50%;
+  top: 60%;
+}
+.sec-4 img {
+  width: 100%;
+}
+
+.sec-4::before {
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 0;
+}
+.sec-4::after {
+  top: 50%;
+  transform: translate(50%, -50%);
+  right: 0;
+}
+
+.sec-7:after,
+.sec-7::before {
+  height: 800px;
+  width: 800px;
+}
+.sec-7:after {
+  left: 0;
+}
+
+.sec-7::before {
+  right: 0;
+}

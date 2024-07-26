@@ -1,0 +1,11 @@
+.my-form {
+  background-color: #ffffff1a;
+  backdrop-filter: blur(3px);
+}
+
+@media screen and (max-width: 767px) {
+  .p-40 {
+    padding: 20px !important;
+    padding-block: 40px;
+  }
+}

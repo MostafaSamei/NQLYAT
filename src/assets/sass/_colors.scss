@@ -1,0 +1,6 @@
+$colors: (
+  "main": #f05326,
+  "secondary": #383838,
+);
+
+$theme-colors: map-merge($theme-colors, $colors);

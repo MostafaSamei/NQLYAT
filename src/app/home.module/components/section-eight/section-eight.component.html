@@ -1,0 +1,141 @@
+<section class="sec-8 sec-padding text-white fs-20 line-height-24 "
+  style="background-image: url('../../../../assets/images/sec-8-bg.jpeg'); background-size: cover; background-position: center center;">
+  <div class="container">
+    <div class="row g-5 justify-content-center">
+      <div class="col-12">
+        <div class="text-center">
+          <h2 class="mb-4">
+            <span class="text-main fw-bold">
+              Get
+            </span> a Competitive Instant Quote
+          </h2>
+          <p>
+            Fill out the form for LTL and Full Truckload rates. Quick access without login!
+          </p>
+        </div>
+      </div>
+      <div class="col-xl-7">
+        <div class="">
+          <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+            <div class="row my-form radius-50 p-40">
+
+              <div class="col-md-6">
+                <div class="d-flex flex-column align-content-center">
+                  <label class="mb-2">
+                    Pickup Location:
+                  </label>
+                  <select class="border-0 p-18 radius-10 mb-3 fs-16 line-high-19" formControlName="pickupLocation">
+                    <option selected>Delivery Location</option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="d-flex flex-column align-content-center">
+                  <label class="mb-2">
+                    Date:
+                  </label>
+                  <input class="border-0 p-18 radius-10 mb-3 fs-16 line-high-19" type="date"
+                    formControlName="pickupDate">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="d-flex flex-column align-content-center">
+                  <label class="mb-2">
+                    Delivery Location:
+                  </label>
+                  <select class="border-0 p-18 radius-10 mb-3 fs-16 line-high-19" formControlName="deliveryLocation">
+                    <option selected>Delivery Location</option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="d-flex flex-column align-content-center">
+                  <label class="mb-2">
+                    Date:
+                  </label>
+                  <input class="border-0 p-18 radius-10 mb-3 fs-16 line-high-19" type="date"
+                    formControlName="deliveryDate">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="d-flex flex-column align-content-center">
+                  <label class="mb-2">
+                    Weight (Tons):
+                  </label>
+                  <input class="border-0 p-18 radius-10 mb-3 fs-16 line-high-19" type="number" formControlName="weight"
+                    placeholder="Weight (Tons)">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="d-flex flex-column align-content-center">
+                  <label class="mb-2">
+                    Load Category:
+                  </label>
+                  <input class="border-0 p-18 radius-10 mb-3 fs-16 line-high-19" type="text"
+                    formControlName="loadCategory" placeholder="Load Category">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="d-flex flex-column align-content-center">
+                  <label class="mb-2">
+                    Company Name:
+                  </label>
+                  <input class="border-0 p-18 radius-10 mb-3 fs-16 line-high-19" type="text"
+                    formControlName="companyName" placeholder="Company Name">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="d-flex flex-column align-content-center">
+                  <label class="mb-2">
+                    Email:
+                  </label>
+                  <input class="border-0 p-18 radius-10 mb-3 fs-16 line-high-19" type="email" formControlName="email"
+                    placeholder="Email">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="d-flex flex-column align-content-center">
+                  <label class="mb-2">
+                    First Number:
+                  </label>
+                  <input class="border-0 p-18 radius-10 mb-3 fs-16 line-high-19" type="text"
+                    formControlName="firstNumber" placeholder="Contact Number">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="d-flex flex-column align-content-center">
+                  <label class="mb-2">
+                    Second Number:
+                  </label>
+                  <input class="border-0 p-18 radius-10 mb-3 fs-16 line-high-19" type="text"
+                    formControlName="secondNumber" placeholder="Contact Number">
+                </div>
+              </div>
+              <div class="col-12">
+                <div>
+                  <button class="btn btn-main text-white mt-4 w-100 fs-20 line-height-24 radius-10 fw-semibold"
+                    style="padding: 24px 16px;" type="submit">Request Your
+                    Quote</button>
+                </div>
+              </div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+      <div class="col-xl-5 d-xl-block d-none">
+        <div class="w-100 h-100 radius-50"
+          style="background-image: url('../../../../assets/images/sec-8-1.jpeg'); background-size: cover; background-position: center center;">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

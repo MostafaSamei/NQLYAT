@@ -1,0 +1,11 @@
+.sec-5 {
+  background-image: url("../../../../assets/images/sec-5-bg.png");
+  background-size: cover;
+}
+
+@media screen and (max-width: 767px) {
+  .description {
+    font-size: 25px !important;
+    line-height: 28.8px !important;
+  }
+}
